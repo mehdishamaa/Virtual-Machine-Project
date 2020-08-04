@@ -1,0 +1,6 @@
+.idea/
+venv
+.vagrant/
+*.logs/
+app/node_modules/
+

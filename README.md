@@ -13,6 +13,13 @@
 
 # Please make sure the following dependencies are installed BEFORE you attempt to download the ZIP file:
 
+- `Vagrant` [Click here to download](https://www.vagrantup.com/downloads)
+- `VirtualBox` [Click here to download](https://www.virtualbox.org/wiki/Downloads)
+- `Bundler` [Click here to download](https://bundler.io/)
+- `Ruby` [Click here to download](https://www.ruby-lang.org/en/downloads/)
+
+
+
 
 
 

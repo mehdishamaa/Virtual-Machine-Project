@@ -1,4 +1,4 @@
-# Automation of Nodejs:
+# Automation of Virtual Machine:
 
 - This ZIP file allows us to create a virtual machine with the use of a single command
 - This command also automatically installs a Nodejs Application
@@ -9,7 +9,7 @@
 
 
 
-:bangbang: WARNING :bangbang:
+# :bangbang: WARNING :bangbang:
 
 # Please make sure the following dependencies are installed BEFORE you attempt to download the ZIP file:
 

@@ -34,38 +34,25 @@ Please open your Terminal OS and run the following commands to verify that all p
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Steps to run program:
 
-1) Firstly, use `cd` to navigate to the directory containing the machine.
+1) Firstly, download the complete ZIP file at the top of the screen to a directory on your computer.
 
+2) Secondly, open your Terminal app and use `cd` followed by the folder path to navigate to the directory containing the unzipped files.
 
-2) Next, run the following command:
+3) Next, run the following command inside the Terminal app:
 
 `vagrant up`
 
-This will set up both our app and db machines.
+This will set up both our app and db machines automatically. Please wait as this may take up to 10 minutes depending on your machine.
 
-3) Next, run the following command:
+4) When both virtual machines have been set up, run the following command:
 
 `vagrant provision`
 
-This will provision our machines with the dependencies we need.
+This will provision our machines with the dependencies we need. Please be patient as this step may also take a few minutes.
 
-4) To test our machines are working, attempt to visit the following websites:
+5) When we see a message  saying ``Your machine is listening on port 3000``, the machine should have been fully provisioned and the web server should be up and running. To test our machines are working, attempt to visit the following websites:
 
 `development.local`
 `development.local/posts`
@@ -82,8 +69,7 @@ This will provision our machines with the dependencies we need.
 
 
 
-
-## Steps to install VM:            
+# Steps to install VM:            
 - vagrant up 
 - vagrant ssh
 - sudo apt-get update -y
@@ -91,15 +77,7 @@ This will provision our machines with the dependencies we need.
 - systemctl status nginx  
 
 
-## Dependencies needed to run this VM (Please make sure these are installed before running):
-
-- VirtualBox
-- Vagrant
-- Ruby
-- Bundler
-
-
---------
+# Running tests
 
 RAKE SPEC
 - rake spec runs the the test written rakefile 

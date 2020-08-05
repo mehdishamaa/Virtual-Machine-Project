@@ -24,11 +24,11 @@ Please open your Terminal OS and run the following commands to verify that all p
 
 - ``vagrant --version``
 
--``ruby --version``
+- ``ruby --version``
 
--``bundle --version``
+- ``bundle --version``
 
--``virtualbox``
+- ``virtualbox``
 
 
 

@@ -23,8 +23,11 @@
 Please open your Terminal OS and run the following commands to verify that all prerequisites have been installed correctly:
 
 - ``vagrant --version``
+
 -``ruby --version``
+
 -``bundle --version``
+
 -``virtualbox``
 
 

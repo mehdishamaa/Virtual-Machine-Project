@@ -1,3 +1,14 @@
+# Automation of Nodejs:
+
+- This ZIP file allows us to create a virtual machine with the use of a single command
+- This command also automatically installs a Nodejs Application
+- Reverse proxy redirection from port 3000 to port 80 is automated
+
+
+
+
+
+
 :bangbang: WARNING :bangbang:
 
 # Please make sure the following dependencies are installed BEFORE you attempt to download the ZIP file:

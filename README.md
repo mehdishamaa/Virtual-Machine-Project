@@ -1,41 +1,100 @@
-# The Project:
+:bangbang: WARNING :bangbang:
 
-- To be able to run the app without the port 3000
+# Please make sure the following dependencies are installed BEFORE you attempt to download the ZIP file:
 
-- Implementing the reverse proxy in automation, through a provisioning script. This will ensure that every time the Vagrant VM is running, a reverse proxy is set up. 
 
-This has been met and tested. In order to test it out, these are the following steps needed to be done:
 
-Fork/clone this repo and download all the files. Please make sure you have the following dependencies installed:
 
-- Vagrant
+
+
+
+
+
+
+
+
+
+
+
+# Steps to run program:
+
+1) Firstly, use `cd` to navigate to the directory containing the machine.
+
+
+2) Next, run the following command:
+
+`vagrant up`
+
+This will set up both our app and db machines.
+
+3) Next, run the following command:
+
+`vagrant provision`
+
+This will provision our machines with the dependencies we need.
+
+4) To test our machines are working, attempt to visit the following websites:
+
+`development.local`
+`development.local/posts`
+
+
+# Reverse Proxy Work:
+
+
+- We used a reverse proxy to automate the switch from our development port (3000) to our client port (80).  
+- We used a provisioning script to do this
+- The script automatically allows the application to redirect from port 3000 to port 80.
+
+
+
+
+
+
+## Steps to install VM:            
+- vagrant up 
+- vagrant ssh
+- sudo apt-get update -y
+- sudo apt- get instal nginx
+- systemctl status nginx  
+
+
+## Dependencies needed to run this VM (Please make sure these are installed before running):
+
 - VirtualBox
+- Vagrant
 - Ruby
 - Bundler
 
-Once this done, from the directory, run this command:
 
-```
-vagrant up
-```
-This will get the machine up and running.
+--------
 
-The next command is the following:
+RAKE SPEC
+- rake spec runs the the test written rakefile 
+- if tests fail 
+- install packages for success
+- inside the vm run:
+	- sudo apt-get update
+	- sudo apt-get install nginx 
+	- systemctl status nginx (checks status)
+	- sudo apt-get upgrade
+	
+	- __install node js__
+	- pm2 
+	- sudo apt-get install -y nodejs
+	- run in root sudo su
+	- npm install pm2 -g  
 
-```
-vagrant provision
-```
-
-The bash will look for the "provision" script inside the VagrantFile and execute it. In this case, we have more than one "provision" script, so it runs the "db machine" first then the "app machine". 
-
-Once the code has been fully executed, it should load the app successfully! 
-
-To test this out, run the following addresses:
-
-```
-development.local
-development.local/posts
-```
-
-Both of these addresses should separately open a post page and a app running testing page. 
+	- cd app 
+	- npm install in the app folder 
+	- development.localhost:3000
+	
+	- touch nginx_installation_script.sh
+	- chmod +x turns files into executable 
+	- chmod +x nginx_installation_script.sh	
+  
+  
+  
+  
+  To test the app is running, run node app.js
 

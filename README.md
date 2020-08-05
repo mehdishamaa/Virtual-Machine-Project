@@ -38,7 +38,13 @@ Please open your Terminal OS and run the following commands to verify that all p
 
 1) Firstly, download the complete ZIP file at the top of the screen to a directory on your computer.
 
+&nbsp;
+&nbsp;
+
 2) Secondly, open your Terminal app and use `cd` followed by the folder path to navigate to the directory containing the unzipped files.
+
+&nbsp;
+&nbsp;
 
 3) Next, run the following command inside the Terminal app:
 
@@ -46,11 +52,17 @@ Please open your Terminal OS and run the following commands to verify that all p
 
 This will set up both our app and db machines automatically. Please wait as this may take up to 10 minutes depending on your machine.
 
+&nbsp;
+&nbsp;
+
 4) When both virtual machines have been set up, run the following command:
 
 `vagrant provision`
 
 This will provision our machines with the dependencies we need. Please be patient as this step may also take a few minutes.
+
+&nbsp;
+&nbsp;
 
 5) When we see a message  saying ``Your machine is listening on port 3000``, the machine should have been fully provisioned and the web server should be up and running. To test our machines are working, attempt to visit the following websites:
 

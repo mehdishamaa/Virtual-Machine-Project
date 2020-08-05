@@ -11,12 +11,23 @@
 
 # :bangbang: #WARNING :bangbang:
 
-# Please make sure the following dependencies are installed BEFORE you attempt to download the ZIP file:
+# Please make sure the following prerequisites are installed BEFORE you attempt to download the ZIP file:
 
 - `Vagrant` [Click here to download](https://www.vagrantup.com/downloads)
 - `VirtualBox` [Click here to download](https://www.virtualbox.org/wiki/Downloads)
 - `Bundler` [Click here to download](https://bundler.io/)
 - `Ruby` [Click here to download](https://www.ruby-lang.org/en/downloads/)
+
+# Prerequisite Check:
+
+Please open your Terminal OS and run the following commands to verify that all prerequisites have been installed correctly:
+
+- ``vagrant --version``
+-``ruby --version``
+-``bundle --version``
+-``virtualbox``
+
+
 
 
 
